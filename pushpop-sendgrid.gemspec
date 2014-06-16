@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = "Sendgrid plugin for sending emails with Pushpop"
 
   s.add_dependency "pushpop"
+  s.add_dependency "mail"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
