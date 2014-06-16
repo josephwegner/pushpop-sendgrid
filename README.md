@@ -23,6 +23,8 @@ The `sendgrid` plugin gives you a DSL to specify typical email parameters.
 Here's an example:
 
 ``` ruby
+require 'pushpop-sendgrid'
+
 job 'send an email' do
 
   sendgrid do
@@ -61,6 +63,8 @@ Need to send multiple emails in one step? Need more control over email sending? 
 Instead, use the `send_email` method exposed by the plugin directly. Here's an example:
 
 ``` ruby
+require 'pushpop-sendgrid'
+
 job 'send multiple emails' do
 
   step 'send some emails' do
