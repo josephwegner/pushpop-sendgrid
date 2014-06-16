@@ -6,5 +6,4 @@ gem 'mail'
 group :development, :test do
   gem 'rake'
   gem 'rspec'
-  gem 'twilio-ruby'
 end
