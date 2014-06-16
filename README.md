@@ -1,6 +1,6 @@
 ## pushpop-sendgrid
 
-Sendgrid plugin for [Pushpop](https://github.com/keenlabs/pushpop).
+Sendgrid plugin for [Pushpop](https://github.com/pushpop-project/pushpop).
 
 ### Installation
 
