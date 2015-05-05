@@ -28,7 +28,7 @@ module Pushpop
 
     def run(last_response=nil, step_responses=nil)
 
-      self.configure(last_response, step_responses)
+      ret = self.configure(last_response, step_responses)
 
       # print the message if its just a preview
       return print_preview if self._preview
@@ -42,6 +42,8 @@ module Pushpop
       if _to && _from && _subject && _body
         send_email(_to, _from, _subject, _body, _attachment)
       end
+
+      ret
     end
 
     def send_email(_to, _from, _subject, _body, _attachment)
